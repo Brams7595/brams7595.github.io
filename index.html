@@ -2,12 +2,80 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portfolio Data Analyst - Brahim Laraki</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #f9f9f9; color: #333; }
+    header { background: #1f77b4; color: white; text-align: center; padding: 2rem 1rem; }
+    header h1 { margin: 0; font-size: 2.5rem; }
+    header p { margin: 0.5rem 0 0; }
+    section { padding: 2rem; max-width: 1000px; margin: auto; }
+    h2 { color: #1f77b4; margin-bottom: 1rem; }
+    .projects { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; }
+    .card { background: white; border-radius: 8px; padding: 1rem; box-shadow: 0 2px 5px rgba(0,0,0,0.1); transition: transform 0.2s; }
+    .card:hover { transform: translateY(-5px); }
+    .card h3 { margin-top: 0; }
+    footer { text-align: center; padding: 1rem; margin-top: 2rem; background: #eee; }
+    a { color: #1f77b4; font-weight: bold; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+  </style>
 </head>
 <body>
-  <h1>Bienvenue sur mon portfolio 👋</h1>
-  <p>Je suis <strong>Brahim Laraki</strong>, Data Analyst passionné par l'analyse de données.</p>
-  <p>Ce site est en cours de construction 🚧.</p>
+  <header>
+    <h1>Brahim Laraki</h1>
+    <p>Data Analyst | Python • SQL • Power BI • KNIME</p>
+  </header>
+
+  <section>
+    <h2>👨‍💻 À propos</h2>
+    <p>
+      Je suis un Data Analyst passionné par l’analyse, la visualisation et l’exploitation des données
+      pour en tirer des insights stratégiques. Mon portfolio présente mes projets réalisés en Python,
+      SQL, Power BI et KNIME.
+    </p>
+  </section>
+
+  <section>
+    <h2>📂 Mes Projets</h2>
+    <div class="projects">
+      <div class="card">
+        <h3>💶 Détection de faux billets</h3>
+        <p>Modèle prédictif pour identifier automatiquement les faux billets en euros à partir de dimensions géométriques.</p>
+        <a href="https://github.com/Brams7595/detection-faux-billets-python" target="_blank">Voir le projet</a>
+      </div>
+      <div class="card">
+        <h3>💧 Étude sur l’eau potable</h3>
+        <p>Analyse des pays confrontés à des difficultés d’accès à l’eau potable et tableau de bord Power BI.</p>
+        <a href="https://github.com/Brams7595/etude-eau-potable" target="_blank">Voir le projet</a>
+      </div>
+      <div class="card">
+        <h3>🏡 Base de données immobilières</h3>
+        <p>Création et normalisation (3NF) d’une base de données SQL pour analyser les transactions immobilières.</p>
+        <a href="https://github.com/Brams7595/Projet-Laplace-Immo-Base-de-donnees" target="_blank">Voir le projet</a>
+      </div>
+      <div class="card">
+        <h3>🐔 La Poule qui Chante</h3>
+        <p>Étude de marché internationale pour identifier les pays favorables à l’exportation de volailles françaises.</p>
+        <a href="https://github.com/Brams7595/etude-export-volaille" target="_blank">Voir le projet</a>
+      </div>
+      <div class="card">
+        <h3>⚖️ Égalité femmes-hommes</h3>
+        <p>Diagnostic automatisé avec KNIME sur les indicateurs RH liés à l’égalité professionnelle femmes-hommes.</p>
+        <a href="https://github.com/Brams7595/analyse-egalite-femme-homme-knime" target="_blank">Voir le projet</a>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>📫 Contact</h2>
+    <p>
+      💼 <a href="https://www.linkedin.com/in/tonprofil" target="_blank">Mon LinkedIn</a><br>
+      📧 <a href="mailto:tonemail@example.com">tonemail@example.com</a>
+    </p>
+  </section>
+
+  <footer>
+    <p>© 2025 Brahim Laraki | Portfolio Data Analyst</p>
+  </footer>
 </body>
 </html>
-
