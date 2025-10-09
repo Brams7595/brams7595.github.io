@@ -1,21 +1,22 @@
-/* ----- POLICE ET BASE ----- */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
 
+/* ---- BASE ---- */
 body {
   margin: 0;
   font-family: 'Poppins', sans-serif;
+  color: #1a1a1a;
   background-color: #f7fdf9;
-  color: #222;
 }
 
-/* ----- HEADER ----- */
+/* ---- HEADER ---- */
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 3rem;
-  background-color: #e6f2ea;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  padding: 1.5rem 3rem;
+  background: linear-gradient(90deg, #b5e7b0, #a0d6a3);
+  border-radius: 0 0 20px 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
 }
 
 .logo {
@@ -26,13 +27,12 @@ header {
 
 .logo h1 {
   color: #1b5e20;
-  font-size: 1.3rem;
-  margin: 0;
+  font-size: 1.4rem;
 }
 
 .icon-logo {
-  width: 35px;
-  height: 35px;
+  width: 40px;
+  height: 40px;
 }
 
 nav ul {
@@ -45,41 +45,43 @@ nav ul {
 
 nav a {
   text-decoration: none;
-  color: #333;
+  color: #1b5e20;
   font-weight: 500;
 }
 
 nav a:hover {
-  color: #1b5e20;
+  color: #0c3b12;
 }
 
+/* ---- MENU DÉROULANT ---- */
 .dropdown {
   position: relative;
 }
-
 .dropdown-menu {
   display: none;
   position: absolute;
   top: 30px;
   left: 0;
   background-color: #e6f2ea;
-  border-radius: 6px;
-  padding: 0.5rem;
+  border-radius: 8px;
   list-style: none;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  padding: 0.5rem 1rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
-
 .dropdown:hover .dropdown-menu {
   display: block;
 }
 
-/* ----- SECTION ACCUEIL ----- */
+/* ---- HERO ---- */
 .hero {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 3rem 6rem;
-  background: linear-gradient(120deg, #a8e6a3, #e1f7e0);
+  padding: 4rem 6rem;
+  background: linear-gradient(180deg, #b8f0b2, #8cd88a);
+  border-radius: 25px;
+  margin: 2rem auto;
+  max-width: 1200px;
 }
 
 .hero-text {
@@ -87,12 +89,13 @@ nav a:hover {
 }
 
 .hero h2 {
-  color: #1b5e20;
-  font-size: 2.3rem;
+  color: #0f4722;
+  font-size: 2.5rem;
+  font-weight: 700;
 }
 
 .hero p {
-  color: #333;
+  color: #2c2c2c;
   line-height: 1.6;
 }
 
@@ -102,61 +105,63 @@ nav a:hover {
   background-color: #1b5e20;
   color: white;
   padding: 0.8rem 1.5rem;
-  border-radius: 30px;
+  border-radius: 25px;
   text-decoration: none;
-  transition: all 0.3s ease;
+  transition: background 0.3s;
 }
 
 .btn:hover {
-  background-color: #388e3c;
+  background-color: #2e7d32;
 }
 
 .hero-photo img {
   width: 230px;
   height: 230px;
   border-radius: 50%;
-  border: 4px solid white;
-  box-shadow: 0 0 15px rgba(0,0,0,0.15);
+  border: 5px solid white;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
 }
 
-/* ----- COMPÉTENCES ----- */
+/* ---- COMPÉTENCES ---- */
 .skills {
   text-align: center;
+  background: linear-gradient(180deg, #8fd88e, #6bbf59);
   padding: 4rem 2rem;
-  background-color: #f0fdf2;
+  border-radius: 25px;
+  color: white;
+  max-width: 1200px;
+  margin: 0 auto 2rem;
 }
 
 .skills h3 {
-  color: #1b5e20;
   font-size: 1.8rem;
-  margin-bottom: 0.5rem;
+  margin-bottom: 1rem;
 }
 
-.intro {
-  color: #444;
-  max-width: 700px;
-  margin: 0 auto 2.5rem;
+.skills .intro {
+  font-weight: 300;
+  margin-bottom: 2rem;
+  color: #e8ffe7;
 }
 
 .skills-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 2rem;
-  max-width: 1000px;
-  margin: auto;
 }
 
 .skill-card {
-  background: #ffffff;
-  padding: 2rem 1.5rem;
+  background: white;
   border-radius: 16px;
-  box-shadow: 0 5px 12px rgba(0,0,0,0.05);
+  padding: 2rem 1.5rem;
+  color: #1b5e20;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
 }
 
 .skill-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
 }
 
 .skill-card img {
@@ -166,25 +171,15 @@ nav a:hover {
 }
 
 .skill-card h4 {
+  margin: 0.5rem 0;
   color: #1b5e20;
-  font-size: 1.1rem;
-  margin-bottom: 0.5rem;
 }
 
-/* ----- FOOTER ----- */
+/* ---- FOOTER ---- */
 footer {
   text-align: center;
-  padding: 1.5rem;
-  background-color: #e6f2ea;
-  color: #333;
-  font-size: 0.9rem;
-}
-
-footer a {
+  padding: 1rem;
+  background: #b5e7b0;
+  border-radius: 15px 15px 0 0;
   color: #1b5e20;
-  text-decoration: none;
-}
-
-footer a:hover {
-  text-decoration: underline;
 }
