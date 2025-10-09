@@ -3,208 +3,112 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Brahim Laraki | Portfolio Data Analyst</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: "Roboto", Arial, sans-serif;
-      background: linear-gradient(180deg, #b8f1b0 0%, #9ee59a 100%);
-      color: #1a1a1a;
-    }
-
-    /* HEADER */
-    header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 20px 60px;
-      background: #a4e4a3;
-    }
-
-    .logo {
-      font-weight: 700;
-      font-size: 1.4em;
-      color: #124f26;
-    }
-
-    nav ul {
-      list-style: none;
-      display: flex;
-      gap: 30px;
-      margin: 0;
-      padding: 0;
-    }
-
-    nav a {
-      text-decoration: none;
-      color: #124f26;
-      font-weight: 600;
-      position: relative;
-    }
-
-    nav li {
-      position: relative;
-    }
-
-    /* Sous-menu déroulant */
-    nav ul ul {
-      display: none;
-      position: absolute;
-      background: #b7f5b1;
-      border-radius: 8px;
-      padding: 10px 0;
-      top: 30px;
-      left: 0;
-      width: 180px;
-    }
-
-    nav ul ul li {
-      display: block;
-      padding: 8px 14px;
-    }
-
-    nav ul ul li a {
-      color: #124f26;
-    }
-
-    nav li:hover > ul {
-      display: block;
-    }
-
-    /* SECTION ACCUEIL */
-    .hero {
-      text-align: left;
-      padding: 60px 80px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-    }
-
-    .hero h1 {
-      font-size: 2.5em;
-      color: #124f26;
-    }
-
-    .hero p {
-      max-width: 500px;
-      font-size: 1.1em;
-      color: #2b2b2b;
-    }
-
-    .hero img {
-      width: 160px;
-      height: 160px;
-      border-radius: 50%;
-      object-fit: cover;
-      border: 4px solid white;
-      box-shadow: 0 0 10px rgba(0,0,0,0.2);
-    }
-
-    /* SECTION COMPÉTENCES */
-    .skills {
-      background: #e8fce5;
-      padding: 60px 80px;
-      text-align: center;
-    }
-
-    .skills h2 {
-      color: #124f26;
-      margin-bottom: 40px;
-      font-size: 2em;
-    }
-
-    .skills-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 30px;
-    }
-
-    .skill {
-      background: white;
-      border-radius: 16px;
-      padding: 20px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-    }
-
-    .skill img {
-      width: 40px;
-      margin-bottom: 10px;
-    }
-
-    .skill h3 {
-      color: #1a592e;
-      margin-bottom: 10px;
-    }
-
-    .skill p {
-      font-size: 0.95em;
-      color: #333;
-    }
-
-    footer {
-      background: #a4e4a3;
-      text-align: center;
-      padding: 20px;
-      font-size: 0.9em;
-      color: #124f26;
-    }
-  </style>
+  <title>Brahim Laraki – Portfolio Data Analyst</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header>
-    <div class="logo">Brahim Laraki</div>
-    <nav>
+
+  <!-- HEADER -->
+  <header class="header">
+    <div class="logo">
+      <img src="https://cdn-icons-png.flaticon.com/512/3798/3798143.png" alt="logo" class="logo-icon">
+      <span>Brahim Laraki</span>
+    </div>
+    <nav class="nav">
       <ul>
         <li><a href="#">Accueil</a></li>
-        <li><a href="#">Mon CV</a></li>
-        <li>
-          <a href="#">Mes projets Data ▾</a>
-          <ul>
-            <li><a href="#">Projet 1 – Analyse des ventes</a></li>
-            <li><a href="#">Projet 2 – Détection des faux billets</a></li>
-            <li><a href="#">Projet 3 – Dashboard Power BI</a></li>
-            <li><a href="#">Projet 4 – Clustering clients</a></li>
+
+        <li class="dropdown">
+          <a href="#">Mon CV ▾</a>
+          <ul class="dropdown-content">
+            <li><a href="Laraki_Brahim_CV.pdf" target="_blank">📄 Mon CV (PDF)</a></li>
           </ul>
         </li>
-        <li><a href="#">Contact</a></li>
+
+        <li class="dropdown">
+          <a href="#">Mes projets Data ▾</a>
+          <ul class="dropdown-content">
+            <li><a href="#">💶 Détection des faux billets</a></li>
+            <li><a href="#">🐔 La Poule qui Chante</a></li>
+            <li><a href="#">🏨 Réunir & MICE (Drupal)</a></li>
+            <li><a href="#">💧 DWFA – Drinking Water for All</a></li>
+            <li><a href="#">🛍️ E-commerce & Shopify Analytics</a></li>
+          </ul>
+        </li>
+
+        <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
   </header>
 
+  <!-- HERO -->
   <section class="hero">
-    <div>
-      <h1>Bienvenue sur mon Portfolio</h1>
-      <h3>Data Analyst • Python • SQL • Power BI • KNIME</h3>
+    <div class="hero-text">
+      <h1>Bienvenue sur mon<br>Portfolio</h1>
+      <h2>Data Analyst | Python • SQL • Power BI • KNIME</h2>
       <p>Je transforme les données en insights stratégiques pour aider les entreprises à mieux décider.</p>
     </div>
-    <img src="https://avatars.githubusercontent.com/u/9919?s=200&v=4" alt="Photo de profil" />
-  </section>
-
-  <section class="skills">
-    <h2>Mes compétences Data</h2>
-    <div class="skills-grid">
-      <div class="skill">
-        <h3>Guider vos décisions</h3>
-        <p>Je vous accompagne dans l’élaboration de stratégies basées sur des faits et des indicateurs solides.</p>
-      </div>
-      <div class="skill">
-        <h3>Gagner en efficacité</h3>
-        <p>J’analyse vos flux et détecte les leviers d’amélioration pour réduire les coûts et optimiser vos résultats.</p>
-      </div>
-      <div class="skill">
-        <h3>Rendre l’information claire</h3>
-        <p>Grâce à des tableaux de bord interactifs, je transforme des données complexes en insights visuels.</p>
-      </div>
-      <div class="skill">
-        <h3>Anticiper l’avenir</h3>
-        <p>Avec les algorithmes de machine learning, j’identifie des tendances et anticipe les comportements.</p>
-      </div>
+    <div class="hero-photo">
+      <img src="20230803_150257.jpg" alt="Brahim Laraki">
     </div>
   </section>
 
-  <footer>
-    © 2025 Brahim Laraki — Portfolio Data Analyst
+  <!-- COMPÉTENCES -->
+  <section class="competences">
+    <h3>Mes compétences Data</h3>
+    <div class="competence-grid">
+      
+      <div class="competence-item">
+        <div class="icon-box">
+          <img src="https://cdn-icons-png.flaticon.com/512/2345/2345364.png" alt="Décision">
+        </div>
+        <h4>Guider vos décisions</h4>
+        <p>Je vous accompagne dans l’élaboration de stratégies solides, basées sur des faits et des indicateurs clairs, pour garantir un impact durable.</p>
+      </div>
+
+      <div class="competence-item">
+        <div class="icon-box">
+          <img src="https://cdn-icons-png.flaticon.com/512/2936/2936631.png" alt="Efficacité">
+        </div>
+        <h4>Gagner en efficacité</h4>
+        <p>En analysant vos flux de travail et vos performances, je détecte les leviers d’amélioration pour atteindre vos objectifs plus rapidement.</p>
+      </div>
+
+      <div class="competence-item">
+        <div class="icon-box">
+          <img src="https://cdn-icons-png.flaticon.com/512/4149/4149728.png" alt="Clarté">
+        </div>
+        <h4>Rendre l’information claire</h4>
+        <p>Avec des tableaux de bord interactifs et des visualisations percutantes, je transforme des données complexes en insights compréhensibles.</p>
+      </div>
+
+      <div class="competence-item">
+        <div class="icon-box">
+          <img src="https://cdn-icons-png.flaticon.com/512/3013/3013456.png" alt="Anticipation">
+        </div>
+        <h4>Anticiper l’avenir</h4>
+        <p>Grâce aux algorithmes de machine learning et à une maîtrise des modèles statistiques, j’identifie les tendances et prévois les scénarios futurs.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer id="contact">
+    <p>© 2025 Brahim Laraki – Data Analyst</p>
+    <div class="footer-links">
+      <a href="mailto:larakibrahim@gmail.com">📧 Email</a>
+      <a href="https://www.linkedin.com/in/brahim-laraki-80a1ba241/" target="_blank">💼 LinkedIn</a>
+    </div>
   </footer>
+
+  <script>
+    // Stabilisation du menu déroulant
+    document.querySelectorAll(".dropdown").forEach(drop => {
+      drop.addEventListener("mouseenter", () => drop.querySelector(".dropdown-content").style.display = "block");
+      drop.addEventListener("mouseleave", () => drop.querySelector(".dropdown-content").style.display = "none");
+    });
+  </script>
 </body>
 </html>
-
