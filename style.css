@@ -5,7 +5,7 @@ body {
   margin: 0;
   font-family: 'Poppins', sans-serif;
   color: #1a1a1a;
-  background-color: #f5fff7;
+  background-color: #f8fff8;
 }
 
 /* ---- HEADER ---- */
@@ -14,8 +14,8 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 1.5rem 3rem;
-  background: linear-gradient(90deg, #7ed957, #a4e075);
-  border-radius: 20px 20px 0 0;
+  background: linear-gradient(90deg, #8be78b, #6ccf6c);
+  border-radius: 25px 25px 0 0;
 }
 
 .logo {
@@ -25,7 +25,7 @@ header {
 }
 
 .logo h1 {
-  color: #0d4618;
+  color: #0e4620;
   font-size: 1.4rem;
   font-weight: 600;
 }
@@ -45,12 +45,12 @@ nav ul {
 
 nav a {
   text-decoration: none;
-  color: #0d4618;
+  color: #0e4620;
   font-weight: 500;
 }
 
 nav a:hover {
-  color: #063510;
+  color: #052d12;
 }
 
 /* ---- MENU DÉROULANT ---- */
@@ -78,7 +78,7 @@ nav a:hover {
   justify-content: space-between;
   align-items: center;
   padding: 4rem 6rem;
-  background: linear-gradient(180deg, #a4e075, #6ecf5c);
+  background: linear-gradient(180deg, #a7f3a7, #68cc68);
   border-radius: 25px;
   margin: 2rem auto;
   max-width: 1200px;
@@ -124,7 +124,7 @@ nav a:hover {
 
 /* ---- COMPÉTENCES ---- */
 .skills {
-  background: #6ecf5c;
+  background: #56b85a;
   color: white;
   padding: 4rem 2rem 5rem;
   text-align: center;
@@ -134,7 +134,7 @@ nav a:hover {
 .skills h3 {
   font-size: 1.8rem;
   margin-bottom: 2.5rem;
-  color: #083b14;
+  color: #0a3211;
   background: #b5f2a2;
   display: inline-block;
   padding: 0.6rem 1.2rem;
@@ -165,7 +165,7 @@ nav a:hover {
 }
 
 .skill-icon {
-  background-color: #e6fae6;
+  background-color: #f4f4f2;
   width: 80px;
   height: 80px;
   border-radius: 25px;
@@ -176,8 +176,9 @@ nav a:hover {
 }
 
 .skill-icon img {
-  width: 45px;
-  height: 45px;
+  width: 42px;
+  height: 42px;
+  filter: brightness(0) saturate(100%);
 }
 
 .skill-card h4 {
