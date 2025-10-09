@@ -5,7 +5,7 @@ body {
   margin: 0;
   font-family: 'Poppins', sans-serif;
   color: #1a1a1a;
-  background-color: #f7fdf9;
+  background-color: #f5fff7;
 }
 
 /* ---- HEADER ---- */
@@ -14,9 +14,8 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 1.5rem 3rem;
-  background: linear-gradient(90deg, #b5e7b0, #a0d6a3);
-  border-radius: 0 0 20px 20px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  background: linear-gradient(90deg, #7ed957, #a4e075);
+  border-radius: 20px 20px 0 0;
 }
 
 .logo {
@@ -26,13 +25,14 @@ header {
 }
 
 .logo h1 {
-  color: #1b5e20;
+  color: #0d4618;
   font-size: 1.4rem;
+  font-weight: 600;
 }
 
 .icon-logo {
-  width: 40px;
-  height: 40px;
+  width: 38px;
+  height: 38px;
 }
 
 nav ul {
@@ -45,12 +45,12 @@ nav ul {
 
 nav a {
   text-decoration: none;
-  color: #1b5e20;
+  color: #0d4618;
   font-weight: 500;
 }
 
 nav a:hover {
-  color: #0c3b12;
+  color: #063510;
 }
 
 /* ---- MENU DÉROULANT ---- */
@@ -62,7 +62,7 @@ nav a:hover {
   position: absolute;
   top: 30px;
   left: 0;
-  background-color: #e6f2ea;
+  background-color: #eaffea;
   border-radius: 8px;
   list-style: none;
   padding: 0.5rem 1rem;
@@ -78,7 +78,7 @@ nav a:hover {
   justify-content: space-between;
   align-items: center;
   padding: 4rem 6rem;
-  background: linear-gradient(180deg, #b8f0b2, #8cd88a);
+  background: linear-gradient(180deg, #a4e075, #6ecf5c);
   border-radius: 25px;
   margin: 2rem auto;
   max-width: 1200px;
@@ -89,20 +89,20 @@ nav a:hover {
 }
 
 .hero h2 {
-  color: #0f4722;
+  color: #0d4618;
   font-size: 2.5rem;
   font-weight: 700;
 }
 
 .hero p {
-  color: #2c2c2c;
+  color: #1f1f1f;
   line-height: 1.6;
 }
 
 .btn {
   display: inline-block;
   margin-top: 1rem;
-  background-color: #1b5e20;
+  background-color: #0d4618;
   color: white;
   padding: 0.8rem 1.5rem;
   border-radius: 25px;
@@ -111,7 +111,7 @@ nav a:hover {
 }
 
 .btn:hover {
-  background-color: #2e7d32;
+  background-color: #166e28;
 }
 
 .hero-photo img {
@@ -124,50 +124,29 @@ nav a:hover {
 
 /* ---- COMPÉTENCES ---- */
 .skills {
-  background-color: #f7fbf8;
-  padding: 5rem 3rem;
-  text-align: left;
-  max-width: 1200px;
-  margin: 3rem auto;
-  border-radius: 25px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  background: #6ecf5c;
+  color: white;
+  padding: 4rem 2rem 5rem;
+  text-align: center;
+  border-radius: 0 0 25px 25px;
 }
 
-.skills-header {
-  max-width: 900px;
-  margin: 0 auto 3rem;
+.skills h3 {
+  font-size: 1.8rem;
+  margin-bottom: 2.5rem;
+  color: #083b14;
+  background: #b5f2a2;
+  display: inline-block;
+  padding: 0.6rem 1.2rem;
+  border-radius: 12px;
+  font-weight: 700;
 }
 
-.skills-header .tag {
-  background-color: #d9f2de;
-  color: #1b5e20;
-  font-weight: 600;
-  font-size: 0.85rem;
-  padding: 0.4rem 0.8rem;
-  border-radius: 6px;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-}
-
-.skills-header h3 {
-  font-size: 2.2rem;
-  color: #0f4722;
-  margin-top: 1rem;
-}
-
-.skills-header p {
-  font-size: 1rem;
-  color: #333;
-  margin-top: 1rem;
-  line-height: 1.7;
-}
-
-/* Cartes compétences */
 .skills-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 2rem;
-  margin-top: 3rem;
+  margin-top: 2rem;
 }
 
 .skill-card {
@@ -175,20 +154,21 @@ nav a:hover {
   border-radius: 20px;
   padding: 2rem;
   text-align: left;
+  color: #0d4618;
   transition: all 0.3s ease;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 5px 12px rgba(0, 0, 0, 0.08);
 }
 
 .skill-card:hover {
-  transform: translateY(-6px);
+  transform: translateY(-5px);
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
 }
 
 .skill-icon {
-  background-color: #effaf2;
+  background-color: #e6fae6;
   width: 80px;
   height: 80px;
-  border-radius: 20px;
+  border-radius: 25px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -196,13 +176,13 @@ nav a:hover {
 }
 
 .skill-icon img {
-  width: 40px;
-  height: 40px;
+  width: 45px;
+  height: 45px;
 }
 
 .skill-card h4 {
   font-size: 1.1rem;
-  color: #1b5e20;
+  color: #0d4618;
   font-weight: 600;
   margin-bottom: 1rem;
 }
@@ -217,7 +197,7 @@ nav a:hover {
 footer {
   text-align: center;
   padding: 1rem;
-  background: #b5e7b0;
+  background: #b5f2a2;
   border-radius: 15px 15px 0 0;
-  color: #1b5e20;
+  color: #0d4618;
 }
