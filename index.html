@@ -2,224 +2,209 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Brahim Laraki – Portfolio</title>
-  <meta name="description" content="Data Analyst | Python • SQL • Power BI • KNIME – Je transforme les données en insights actionnables pour aider les entreprises à mieux décider." />
-
-  <!-- Police -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Brahim Laraki | Portfolio Data Analyst</title>
   <style>
-    :root{
-      --green-1:#b7f0b3; /* clair */
-      --green-2:#60d394; /* moyen */
-      --green-3:#30b06d; /* foncé */
-      --text:#0f172a;    /* slate-900 */
-      --muted:#475569;   /* slate-600 */
-      --bg:#f6f8f7;
-      --card:#ffffff;
-      --ring:rgba(16,185,129,.35);
-      --radius:18px;
+    body {
+      margin: 0;
+      font-family: "Roboto", Arial, sans-serif;
+      background: linear-gradient(180deg, #b8f1b0 0%, #9ee59a 100%);
+      color: #1a1a1a;
     }
-    *{box-sizing:border-box}
-    html,body{margin:0;padding:0}
-    body{
-      font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,"Apple Color Emoji","Segoe UI Emoji";
-      color:var(--text);
-      background:var(--bg);
-      line-height:1.55;
-    }
-    a{color:inherit;text-decoration:none}
 
-    /* NAV */
-    .nav{
-      position:sticky;top:0;z-index:50;
-      backdrop-filter:saturate(1.1) blur(8px);
-      background:rgba(246,248,247,.75);
-      border-bottom:1px solid #e6ece9;
+    /* HEADER */
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 60px;
+      background: #a4e4a3;
     }
-    .wrap{max-width:1100px;margin:0 auto;padding:14px 20px}
-    .nav-inner{display:flex;align-items:center;justify-content:space-between;gap:14px}
-    .brand{display:flex;align-items:center;gap:10px;font-weight:700}
-    .brand .logo{width:34px;height:34px;border-radius:999px;display:grid;place-items:center;background:linear-gradient(135deg,var(--green-3),var(--green-2));color:white;font-weight:800}
-    .menu{display:flex;gap:14px;align-items:center}
-    .menu a{padding:8px 12px;border-radius:12px;font-weight:600}
-    .menu a:hover{background:#eaf6ef}
 
-    /* HERO */
-    .hero{
-      background:linear-gradient(180deg, var(--green-1) 0%, #c9f5c6 45%, #e7fbe7 46%, #e7fbe7 100%);
-      border-bottom:1px solid #e1f2e5;
+    .logo {
+      font-weight: 700;
+      font-size: 1.4em;
+      color: #124f26;
     }
-    .hero-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:28px;align-items:center;padding:48px 20px 36px}
-    .kicker{font-weight:700;color:#0b3b2f;letter-spacing:.02em}
-    h1{font-family:"Playfair Display",serif;font-weight:800;line-height:1.05;margin:10px 0 14px;font-size:clamp(36px,6.2vw,56px)}
-    .stack{font-weight:700;color:#0b3b2f;margin-bottom:8px}
-    .lead{color:var(--muted);max-width:60ch}
-    .actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:18px}
-    .btn{display:inline-flex;align-items:center;gap:8px;padding:12px 16px;border-radius:14px;font-weight:700;border:1px solid #cfeedd;background:white}
-    .btn.primary{background:linear-gradient(135deg,var(--green-3),var(--green-2));color:white;border-color:transparent;box-shadow:0 8px 20px rgba(48,176,109,.25)}
-    .btn:hover{transform:translateY(-1px)}
 
-    .avatar-wrap{display:grid;place-items:center}
-    .avatar{
-      width:min(240px,55vw);aspect-ratio:1/1;border-radius:999px;overflow:hidden;border:10px solid rgba(255,255,255,.75);box-shadow:0 10px 30px rgba(16,185,129,.25)
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 30px;
+      margin: 0;
+      padding: 0;
     }
-    .avatar img{width:100%;height:100%;object-fit:cover}
 
-    /* COMPETENCES */
-    .section{padding:40px 20px}
-    .section h2{font-family:"Playfair Display",serif;text-align:center;font-size:clamp(26px,4.2vw,36px);margin:0 0 22px}
-    .grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
-    .card{background:var(--card);border:1px solid #e9eef0;border-radius:var(--radius);padding:18px 18px 16px;box-shadow:0 6px 14px rgba(2,6,23,.06)}
-    .card h3{margin:12px 0 8px;font-size:18px}
-    .card p{color:var(--muted);font-size:15px;margin:0}
-    .picto{width:54px;height:54px;border-radius:16px;display:grid;place-items:center;border:1px solid #edf2ef;background:white;margin-bottom:8px;box-shadow:0 8px 16px rgba(16,185,129,.18)}
-    .picto svg{width:28px;height:28px}
-
-    /* FOOTER */
-    footer{padding:28px 20px 48px;border-top:1px solid #ecf0ef;color:#64748b;text-align:center}
-
-    /* Responsive */
-    @media (max-width:900px){
-      .hero-grid{grid-template-columns:1fr;gap:16px;text-align:center}
-      .lead{margin:0 auto}
+    nav a {
+      text-decoration: none;
+      color: #124f26;
+      font-weight: 600;
+      position: relative;
     }
-    @media (max-width:860px){
-      .grid{grid-template-columns:1fr 1fr}
+
+    nav li {
+      position: relative;
     }
-    @media (max-width:520px){
-      .menu{display:none}
-      .grid{grid-template-columns:1fr}
-      .wrap{padding:14px 16px}
+
+    /* Sous-menu déroulant */
+    nav ul ul {
+      display: none;
+      position: absolute;
+      background: #b7f5b1;
+      border-radius: 8px;
+      padding: 10px 0;
+      top: 30px;
+      left: 0;
+      width: 180px;
+    }
+
+    nav ul ul li {
+      display: block;
+      padding: 8px 14px;
+    }
+
+    nav ul ul li a {
+      color: #124f26;
+    }
+
+    nav li:hover > ul {
+      display: block;
+    }
+
+    /* SECTION ACCUEIL */
+    .hero {
+      text-align: left;
+      padding: 60px 80px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .hero h1 {
+      font-size: 2.5em;
+      color: #124f26;
+    }
+
+    .hero p {
+      max-width: 500px;
+      font-size: 1.1em;
+      color: #2b2b2b;
+    }
+
+    .hero img {
+      width: 160px;
+      height: 160px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 4px solid white;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    }
+
+    /* SECTION COMPÉTENCES */
+    .skills {
+      background: #e8fce5;
+      padding: 60px 80px;
+      text-align: center;
+    }
+
+    .skills h2 {
+      color: #124f26;
+      margin-bottom: 40px;
+      font-size: 2em;
+    }
+
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 30px;
+    }
+
+    .skill {
+      background: white;
+      border-radius: 16px;
+      padding: 20px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    .skill img {
+      width: 40px;
+      margin-bottom: 10px;
+    }
+
+    .skill h3 {
+      color: #1a592e;
+      margin-bottom: 10px;
+    }
+
+    .skill p {
+      font-size: 0.95em;
+      color: #333;
+    }
+
+    footer {
+      background: #a4e4a3;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9em;
+      color: #124f26;
     }
   </style>
 </head>
 <body>
-  <!-- NAVIGATION -->
-  <header class="nav">
-    <div class="wrap nav-inner">
-      <a class="brand" href="#">
-        <span class="logo">BL</span>
-        <span>Brahim Laraki</span>
-      </a>
-      <nav class="menu" aria-label="Navigation principale">
-        <a href="#">Accueil</a>
-        <a href="#cv">Mon CV</a>
-        <a href="#projets">Mes projets Data</a>
-        <a href="#contact" class="btn">Contact</a>
-      </nav>
-    </div>
+  <header>
+    <div class="logo">Brahim Laraki</div>
+    <nav>
+      <ul>
+        <li><a href="#">Accueil</a></li>
+        <li><a href="#">Mon CV</a></li>
+        <li>
+          <a href="#">Mes projets Data ▾</a>
+          <ul>
+            <li><a href="#">Projet 1 – Analyse des ventes</a></li>
+            <li><a href="#">Projet 2 – Détection des faux billets</a></li>
+            <li><a href="#">Projet 3 – Dashboard Power BI</a></li>
+            <li><a href="#">Projet 4 – Clustering clients</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
   </header>
 
-  <!-- HERO -->
   <section class="hero">
-    <div class="wrap hero-grid">
-      <div>
-        <div class="kicker">Bienvenue sur mon</div>
-        <h1>Portfolio</h1>
-        <div class="stack">Data Analyst | Python • SQL • Power BI • KNIME</div>
-        <p class="lead">Je transforme les données en insights stratégiques pour aider les entreprises à mieux décider.</p>
-        <div class="actions">
-          <a class="btn primary" href="#projets">Voir mes projets</a>
-          <a class="btn" href="#cv">Télécharger mon CV</a>
-        </div>
+    <div>
+      <h1>Bienvenue sur mon Portfolio</h1>
+      <h3>Data Analyst • Python • SQL • Power BI • KNIME</h3>
+      <p>Je transforme les données en insights stratégiques pour aider les entreprises à mieux décider.</p>
+    </div>
+    <img src="https://avatars.githubusercontent.com/u/9919?s=200&v=4" alt="Photo de profil" />
+  </section>
+
+  <section class="skills">
+    <h2>Mes compétences Data</h2>
+    <div class="skills-grid">
+      <div class="skill">
+        <h3>Guider vos décisions</h3>
+        <p>Je vous accompagne dans l’élaboration de stratégies basées sur des faits et des indicateurs solides.</p>
       </div>
-      <div class="avatar-wrap">
-        <!-- Remplacez le src ci‑dessous par votre propre image (ex: /assets/portrait.jpg) -->
-        <div class="avatar">
-          <img src="https://images.unsplash.com/photo-1607746882042-944635dfe10e?q=80&w=1200&auto=format&fit=crop" alt="Portrait de Brahim Laraki" />
-        </div>
+      <div class="skill">
+        <h3>Gagner en efficacité</h3>
+        <p>J’analyse vos flux et détecte les leviers d’amélioration pour réduire les coûts et optimiser vos résultats.</p>
       </div>
-    </div>
-  </section>
-
-  <!-- COMPETENCES -->
-  <section class="section" id="competences">
-    <div class="wrap">
-      <h2>Mes compétences Data</h2>
-      <div class="grid">
-        <!-- Card 1 -->
-        <article class="card">
-          <div class="picto" aria-hidden="true">
-            <!-- target icon -->
-            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M12 21a9 9 0 1 0-9-9" stroke="currentColor" stroke-width="1.6"/>
-              <circle cx="12" cy="12" r="3" stroke="currentColor" stroke-width="1.6"/>
-            </svg>
-          </div>
-          <h3>Guider vos décisions</h3>
-          <p>Je vous accompagne dans l’élaboration de stratégies solides, basées sur des faits et des indicateurs fiables, pour garantir un impact et un développement mesurables.</p>
-        </article>
-        <!-- Card 2 -->
-        <article class="card">
-          <div class="picto" aria-hidden="true">
-            <!-- efficiency icon -->
-            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M4 13h6v7H4zM14 4h6v16h-6z" stroke="currentColor" stroke-width="1.6"/>
-            </svg>
-          </div>
-          <h3>Gagner en efficacité</h3>
-          <p>En analysant vos flux et vos performances, j’identifie les leviers d’amélioration pour réduire les coûts, maximiser les résultats et automatiser ce qui peut l’être.</p>
-        </article>
-        <!-- Card 3 -->
-        <article class="card">
-          <div class="picto" aria-hidden="true">
-            <!-- clarity icon -->
-            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M4 7h16M4 12h16M4 17h10" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
-            </svg>
-          </div>
-          <h3>Rendre l’information claire</h3>
-          <p>Avec des dashboards interactifs et des visualisations percutantes, je transforme des données complexes en insights compréhensibles et actionnables.</p>
-        </article>
-        <!-- Card 4 -->
-        <article class="card">
-          <div class="picto" aria-hidden="true">
-            <!-- forecast icon -->
-            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M3 17c2-3 5-5 9-5s7 2 9 5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
-              <path d="M12 4v4M12 8l2-2M12 8l-2-2" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
-            </svg>
-          </div>
-          <h3>Anticiper l’avenir</h3>
-          <p>Grâce aux modèles de ML et une maîtrise des méthodes statistiques, j’identifie des tendances et anticipe des scénarios pour mieux décider.</p>
-        </article>
+      <div class="skill">
+        <h3>Rendre l’information claire</h3>
+        <p>Grâce à des tableaux de bord interactifs, je transforme des données complexes en insights visuels.</p>
       </div>
-    </div>
-  </section>
-
-  <!-- SECTIONS FANTÔMES POUR ANCRAGES (à compléter plus tard) -->
-  <section id="projets" class="section">
-    <div class="wrap">
-      <h2>Mes projets Data</h2>
-      <p style="color:var(--muted)">Bientôt en ligne : études de cas Power BI, notebooks Python (Pandas, scikit‑learn), et automatisations KNIME.</p>
-    </div>
-  </section>
-
-  <section id="cv" class="section">
-    <div class="wrap">
-      <h2>Mon CV</h2>
-      <p style="color:var(--muted)">Ajoutez ici un lien vers votre CV (PDF) hébergé dans le dépôt : <code>/assets/CV_Brahim_Laraki.pdf</code>.</p>
-    </div>
-  </section>
-
-  <section id="contact" class="section">
-    <div class="wrap">
-      <h2>Contact</h2>
-      <p style="color:var(--muted)">Envoyez‑moi un message sur <a href="mailto:contact@exemple.com">contact@exemple.com</a> ou via LinkedIn.</p>
+      <div class="skill">
+        <h3>Anticiper l’avenir</h3>
+        <p>Avec les algorithmes de machine learning, j’identifie des tendances et anticipe les comportements.</p>
+      </div>
     </div>
   </section>
 
   <footer>
-    © <span id="y"></span> Brahim Laraki — Portfolio. Fait avec HTML/CSS, hébergé sur GitHub Pages.
+    © 2025 Brahim Laraki — Portfolio Data Analyst
   </footer>
-
-  <script>
-    document.getElementById('y').textContent = new Date().getFullYear();
-  </script>
 </body>
 </html>
 
