@@ -87,50 +87,65 @@ body {
   box-shadow:0 4px 12px rgba(0,0,0,0.15);
 }
 
-/* ==== COMPÉTENCES ==== */
+/* ===== COMPÉTENCES (fidèle à la capture) ===== */
 .competences {
-  background:#8fd78f;
-  text-align:center;
-  padding:3rem 2rem 4rem;
+  background-color: #82d782; /* vert moyen */
+  text-align: center;
+  padding: 3.5rem 2rem 4rem;
 }
+
 .competences h3 {
-  font-size:1.9rem;
-  font-weight:700;
-  margin-bottom:2.5rem;
-  color:#0f3a1e;
+  font-size: 1.9rem;
+  font-weight: 700;
+  margin-bottom: 2.5rem;
+  color: #0f3a1e;
 }
+
 .competence-grid {
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-  gap:2rem;
-  max-width:1100px;
-  margin:0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2.5rem;
+  max-width: 1100px;
+  margin: 0 auto;
 }
+
 .competence-card {
-  background:#fff;
-  padding:2rem 1.5rem;
-  border-radius:10px;
-  box-shadow:0 4px 10px rgba(0,0,0,0.08);
-  transition:transform 0.3s ease,box-shadow 0.3s ease;
+  width: 250px;
+  text-align: center;
+  color: #0f3a1e;
 }
-.competence-card:hover {
-  transform:translateY(-6px);
-  box-shadow:0 6px 14px rgba(0,0,0,0.12);
+
+.competence-card .icon-box {
+  background: #ffffff;
+  width: 64px;
+  height: 64px;
+  margin: 0 auto 1rem;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.08);
 }
-.competence-card img {
-  width:60px;
-  margin-bottom:1rem;
+
+.competence-card .icon-box img {
+  width: 36px;
+  height: 36px;
 }
+
 .competence-card h4 {
-  color:#145a23;
-  font-weight:700;
-  margin-bottom:1rem;
-  font-size:1.05rem;
+  font-weight: 700;
+  font-size: 1.05rem;
+  margin-bottom: 0.8rem;
+  color: #0a3a1c;
 }
+
 .competence-card p {
-  font-size:0.95rem;
-  color:#1b3d1f;
+  font-size: 0.9rem;
+  color: #123b1d;
+  line-height: 1.5;
 }
+
 
 /* ==== FOOTER ==== */
 footer {
