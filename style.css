@@ -45,7 +45,7 @@ body {
   color: #0d3b66;
 }
 
-/* ====== DROPDOWN ====== */
+/* ====== DROPDOWN (avec animation) ====== */
 .dropdown {
   position: relative;
 }
@@ -56,7 +56,6 @@ body {
   transition: color 0.3s;
 }
 
-/* Conteneur du sous-menu */
 .dropdown-content {
   display: block;
   position: absolute;
@@ -71,7 +70,7 @@ body {
   min-width: 220px;
   z-index: 1001;
 
-  /* Animation de transition */
+  /* Animation */
   opacity: 0;
   visibility: hidden;
   transform: translateY(10px);
@@ -79,7 +78,6 @@ body {
   pointer-events: none;
 }
 
-/* Liens du sous-menu */
 .dropdown-content li {
   padding: 0.6rem 1.2rem;
 }
@@ -97,7 +95,6 @@ body {
   color: #0d3b66;
 }
 
-/* Animation au survol */
 .dropdown:hover .dropdown-content {
   opacity: 1;
   visibility: visible;
@@ -105,7 +102,6 @@ body {
   pointer-events: auto;
 }
 
-/* Empêche la perte de hover */
 .nav-links li {
   position: relative;
 }
@@ -114,7 +110,6 @@ body {
   color: #0d3b66;
 }
 
-/* Couleur au survol du parent */
 .dropdown:hover > a {
   color: #0d3b66;
 }
@@ -332,6 +327,17 @@ body {
   line-height: 1.5;
 }
 
+/* Puces de liste dans la timeline */
+.timeline-content ul {
+  margin: 0.5rem 0 0 1.2rem;
+  color: #444;
+}
+
+.timeline-content li {
+  margin-bottom: 0.4rem;
+  line-height: 1.5;
+}
+
 /* ====== FOOTER ====== */
 footer {
   text-align: center;
@@ -375,4 +381,19 @@ footer a:hover {
     flex-wrap: wrap;
     justify-content: center;
   }
+
+  .timeline {
+    border-left: none;
+    padding-left: 0;
+  }
+
+  .timeline-item::before {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .timeline-content {
+    text-align: center;
+  }
 }
+
