@@ -224,3 +224,71 @@ footer a:hover {
   font-size: 0.9rem;
   color: #e0e0e0;
 }
+/* ====== SECTION TIMELINE ====== */
+.timeline-section {
+  background-color: #e9edf0;
+  padding: 4rem 10%;
+  text-align: center;
+}
+
+.timeline-section h2 {
+  color: #0d3b66;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.timeline-section .intro {
+  color: #555;
+  margin-bottom: 3rem;
+}
+
+.timeline {
+  position: relative;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 1rem;
+  border-left: 3px solid #0d3b66;
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 2rem;
+  padding-left: 2rem;
+}
+
+.timeline-item::before {
+  content: '';
+  position: absolute;
+  left: -8px;
+  top: 5px;
+  width: 16px;
+  height: 16px;
+  background-color: #0d3b66;
+  border-radius: 50%;
+}
+
+.timeline-date {
+  font-weight: bold;
+  color: #0d3b66;
+  font-size: 1.1rem;
+  margin-bottom: 0.3rem;
+}
+
+.timeline-content {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 1rem 1.5rem;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  text-align: left;
+}
+
+.timeline-content h3 {
+  margin-top: 0;
+  color: #0d3b66;
+}
+
+.timeline-content p {
+  color: #444;
+  margin: 0.5rem 0 0;
+  line-height: 1.5;
+}
