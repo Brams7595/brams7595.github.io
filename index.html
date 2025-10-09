@@ -5,27 +5,27 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Brahim Laraki – Portfolio Data Analyst</title>
   <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet" />
 </head>
+
 <body>
-
   <!-- HEADER -->
-  <header class="header">
+  <header>
     <div class="logo">
-      <img src="https://cdn-icons-png.flaticon.com/512/3798/3798143.png" alt="logo" class="logo-icon">
-      <span>Brahim Laraki</span>
+      <img src="https://cdn-icons-png.flaticon.com/512/3798/3798143.png" alt="Logo" class="logo-icon" />
+      <span class="logo-text">Brahim Laraki</span>
     </div>
-    <nav class="nav">
-      <ul>
+    <nav>
+      <ul class="nav-links">
         <li><a href="#">Accueil</a></li>
-
         <li class="dropdown">
           <a href="#">Mon CV ▾</a>
           <ul class="dropdown-content">
-            <li><a href="Laraki_Brahim_CV.pdf" target="_blank">📄 Mon CV (PDF)</a></li>
+            <li><a href="CV_Brahim_Laraki.pdf" target="_blank">📄 Voir mon CV PDF</a></li>
           </ul>
         </li>
-
         <li class="dropdown">
           <a href="#">Mes projets Data ▾</a>
           <ul class="dropdown-content">
@@ -36,79 +36,70 @@
             <li><a href="#">🛍️ E-commerce & Shopify Analytics</a></li>
           </ul>
         </li>
-
-        <li><a href="#contact">Contact</a></li>
+        <li><a href="#">Contact</a></li>
       </ul>
     </nav>
   </header>
 
-  <!-- HERO -->
+  <!-- SECTION HERO -->
   <section class="hero">
     <div class="hero-text">
-      <h1>Bienvenue sur mon<br>Portfolio</h1>
+      <h1>Bienvenue sur mon Portfolio</h1>
       <h2>Data Analyst | Python • SQL • Power BI • KNIME</h2>
       <p>Je transforme les données en insights stratégiques pour aider les entreprises à mieux décider.</p>
+      <a href="#" class="btn">Découvrir mes projets</a>
     </div>
     <div class="hero-photo">
-      <img src="20230803_150257.jpg" alt="Brahim Laraki">
+      <img src="20230803_150257.jpg" alt="Photo Brahim Laraki" />
     </div>
   </section>
 
-  <!-- COMPÉTENCES -->
+  <!-- BLOC VISUEL DE TRANSITION -->
+  <section class="transition-competences">
+    <div class="overlay">
+      <h4>MES COMPÉTENCES</h4>
+    </div>
+  </section>
+
+  <!-- SECTION COMPÉTENCES -->
   <section class="competences">
-    <h3>Mes compétences Data</h3>
     <div class="competence-grid">
-      
-      <div class="competence-item">
-        <div class="icon-box">
-          <img src="https://cdn-icons-png.flaticon.com/512/2345/2345364.png" alt="Décision">
-        </div>
+
+      <div class="competence-card">
+        <img src="https://cdn-icons-png.flaticon.com/512/2345/2345364.png" alt="Guider vos décisions" />
         <h4>Guider vos décisions</h4>
-        <p>Je vous accompagne dans l’élaboration de stratégies solides, basées sur des faits et des indicateurs clairs, pour garantir un impact durable.</p>
+        <p>Je vous accompagne dans l’élaboration de stratégies solides, basées sur des faits et des indicateurs clairs, pour garantir un impact durable dans un environnement économique en constante évolution.</p>
       </div>
 
-      <div class="competence-item">
-        <div class="icon-box">
-          <img src="https://cdn-icons-png.flaticon.com/512/2936/2936631.png" alt="Efficacité">
-        </div>
+      <div class="competence-card">
+        <img src="https://cdn-icons-png.flaticon.com/512/2936/2936631.png" alt="Gagner en efficacité" />
         <h4>Gagner en efficacité</h4>
-        <p>En analysant vos flux de travail et vos performances, je détecte les leviers d’amélioration pour atteindre vos objectifs plus rapidement.</p>
+        <p>En analysant vos flux de travail et vos performances, je détecte les leviers d’amélioration pour réduire les coûts, maximiser les ressources et atteindre vos objectifs plus rapidement.</p>
       </div>
 
-      <div class="competence-item">
-        <div class="icon-box">
-          <img src="https://cdn-icons-png.flaticon.com/512/4149/4149728.png" alt="Clarté">
-        </div>
+      <div class="competence-card">
+        <img src="https://cdn-icons-png.flaticon.com/512/4149/4149728.png" alt="Rendre l’information claire" />
         <h4>Rendre l’information claire</h4>
-        <p>Avec des tableaux de bord interactifs et des visualisations percutantes, je transforme des données complexes en insights compréhensibles.</p>
+        <p>Avec des tableaux de bord interactifs et des visualisations percutantes, je transforme des données complexes en insights compréhensibles et actionnables à tous les niveaux de votre organisation.</p>
       </div>
 
-      <div class="competence-item">
-        <div class="icon-box">
-          <img src="https://cdn-icons-png.flaticon.com/512/3013/3013456.png" alt="Anticipation">
-        </div>
+      <div class="competence-card">
+        <img src="https://cdn-icons-png.flaticon.com/512/3013/3013456.png" alt="Anticiper l’avenir" />
         <h4>Anticiper l’avenir</h4>
-        <p>Grâce aux algorithmes de machine learning et à une maîtrise des modèles statistiques, j’identifie les tendances et prévois les scénarios futurs.</p>
+        <p>Grâce aux algorithmes de machine learning et à une maîtrise des modèles statistiques, j’identifie les tendances et prévois des scénarios futurs pour aider votre entreprise à garder une longueur d’avance.</p>
       </div>
 
     </div>
   </section>
 
   <!-- FOOTER -->
-  <footer id="contact">
-    <p>© 2025 Brahim Laraki – Data Analyst</p>
+  <footer>
+    <p>© 2025 <strong>Brahim Laraki</strong> — Data Analyst</p>
     <div class="footer-links">
-      <a href="mailto:larakibrahim@gmail.com">📧 Email</a>
+      <a href="mailto:larakibrahim@gmail.com" target="_blank">📧 Email</a>
       <a href="https://www.linkedin.com/in/brahim-laraki-80a1ba241/" target="_blank">💼 LinkedIn</a>
     </div>
   </footer>
 
-  <script>
-    // Stabilisation du menu déroulant
-    document.querySelectorAll(".dropdown").forEach(drop => {
-      drop.addEventListener("mouseenter", () => drop.querySelector(".dropdown-content").style.display = "block");
-      drop.addEventListener("mouseleave", () => drop.querySelector(".dropdown-content").style.display = "none");
-    });
-  </script>
 </body>
 </html>
