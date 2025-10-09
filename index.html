@@ -7,94 +7,94 @@
   <link rel="stylesheet" href="style.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
 </head>
 
 <body>
-  <!-- HEADER -->
-  <header>
-    <div class="logo">
-      <img src="https://cdn-icons-png.flaticon.com/512/3798/3798143.png" alt="Logo" class="logo-icon" />
-      <span class="logo-text">Brahim Laraki</span>
+  <!-- === HEADER intégré au bloc vert clair === -->
+  <header class="main-header">
+    <div class="header-content">
+      <div class="logo">
+        <img src="https://cdn-icons-png.flaticon.com/512/3798/3798143.png" alt="Logo" class="logo-icon" />
+        <span class="logo-text">Brahim Laraki</span>
+      </div>
+
+      <nav class="navbar">
+        <ul class="nav-links">
+          <li><a href="#">Accueil</a></li>
+
+          <li class="dropdown">
+            <a href="#">Mon CV ▾</a>
+            <ul class="dropdown-content">
+              <li><a href="CV_Brahim_Laraki.pdf" target="_blank">📄 Voir mon CV (PDF)</a></li>
+            </ul>
+          </li>
+
+          <li class="dropdown">
+            <a href="#">Mes projets Data ▾</a>
+            <ul class="dropdown-content">
+              <li><a href="#">💶 Détection des faux billets</a></li>
+              <li><a href="#">🐔 La Poule qui Chante</a></li>
+              <li><a href="#">🏨 Réunir & MICE (Drupal)</a></li>
+              <li><a href="#">💧 DWFA – Drinking Water for All</a></li>
+              <li><a href="#">🛍️ E-commerce & Shopify Analytics</a></li>
+            </ul>
+          </li>
+
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
     </div>
-    <nav>
-      <ul class="nav-links">
-        <li><a href="#">Accueil</a></li>
-
-        <li class="dropdown">
-          <a href="#">Mon CV ▾</a>
-          <ul class="dropdown-content">
-            <li><a href="CV_Brahim_Laraki.pdf" target="_blank">📄 Voir mon CV PDF</a></li>
-          </ul>
-        </li>
-
-        <li class="dropdown">
-          <a href="#">Mes projets Data ▾</a>
-          <ul class="dropdown-content">
-            <li><a href="#">💶 Détection des faux billets</a></li>
-            <li><a href="#">🐔 La Poule qui Chante</a></li>
-            <li><a href="#">🏨 Réunir & MICE (Drupal)</a></li>
-            <li><a href="#">💧 DWFA – Drinking Water for All</a></li>
-            <li><a href="#">🛍️ E-commerce & Shopify Analytics</a></li>
-          </ul>
-        </li>
-
-        <li><a href="#">Contact</a></li>
-      </ul>
-    </nav>
   </header>
 
-  <!-- HERO -->
-  <section class="hero">
-    <div class="hero-text">
-      <h1>Bienvenue sur mon Portfolio</h1>
-      <h2>Data Analyst | Python • SQL • Power BI • KNIME</h2>
-      <p>Je transforme les données en insights stratégiques pour aider les entreprises à mieux décider.</p>
-      <a href="#" class="btn">Découvrir mes projets</a>
+  <!-- === HERO + COMPÉTENCES dans un seul bloc === -->
+  <section class="hero-competences">
+    <div class="hero">
+      <div class="hero-text">
+        <h1>Bienvenue sur mon Portfolio</h1>
+        <h2>Data Analyst | Python • SQL • Power BI • KNIME</h2>
+        <p>Je transforme les données en insights stratégiques pour aider les entreprises à mieux décider.</p>
+      </div>
+
+      <div class="hero-photo">
+        <img src="20230803_150257.jpg" alt="Photo Brahim Laraki" />
+      </div>
     </div>
-    <div class="hero-photo">
-      <img src="20230803_150257.jpg" alt="Photo Brahim Laraki" />
-    </div>
-  </section>
 
-  <!-- COMPÉTENCES -->
-  <section class="competences">
-    <h3>Mes compétences Data</h3>
+    <div class="competences">
+      <h3>Mes compétences Data</h3>
+      <div class="competence-grid">
+        <div class="competence-card">
+          <img src="https://cdn-icons-png.flaticon.com/512/2345/2345364.png" alt="Guider vos décisions" />
+          <h4>Guider vos décisions</h4>
+          <p>Je vous accompagne dans l’élaboration de stratégies solides, basées sur des faits et des indicateurs clairs, pour garantir un impact durable dans un environnement économique en constante évolution.</p>
+        </div>
 
-    <div class="competence-grid">
+        <div class="competence-card">
+          <img src="https://cdn-icons-png.flaticon.com/512/2936/2936631.png" alt="Gagner en efficacité" />
+          <h4>Gagner en efficacité</h4>
+          <p>En analysant vos flux de travail et vos performances, je détecte les leviers d’amélioration pour réduire les coûts, maximiser les ressources et atteindre vos objectifs plus rapidement.</p>
+        </div>
 
-      <div class="competence-card">
-        <img src="https://cdn-icons-png.flaticon.com/512/2345/2345364.png" alt="Guider vos décisions" />
-        <h4>Guider vos décisions</h4>
-        <p>Je vous accompagne dans l’élaboration de stratégies solides, basées sur des faits et des indicateurs clairs, pour garantir un impact durable dans un environnement économique en constante évolution.</p>
+        <div class="competence-card">
+          <img src="https://cdn-icons-png.flaticon.com/512/4149/4149728.png" alt="Rendre l’information claire" />
+          <h4>Rendre l’information claire</h4>
+          <p>Avec des tableaux de bord interactifs et des visualisations percutantes, je transforme des données complexes en insights compréhensibles et actionnables à tous les niveaux de votre organisation.</p>
+        </div>
+
+        <div class="competence-card">
+          <img src="https://cdn-icons-png.flaticon.com/512/3013/3013456.png" alt="Anticiper l’avenir" />
+          <h4>Anticiper l’avenir</h4>
+          <p>Grâce aux algorithmes de machine learning et à une maîtrise des modèles statistiques, j’identifie les tendances et prévois des scénarios futurs pour aider votre entreprise à garder une longueur d’avance.</p>
+        </div>
       </div>
-
-      <div class="competence-card">
-        <img src="https://cdn-icons-png.flaticon.com/512/2936/2936631.png" alt="Gagner en efficacité" />
-        <h4>Gagner en efficacité</h4>
-        <p>En analysant vos flux de travail et vos performances, je détecte les leviers d’amélioration pour réduire les coûts, maximiser les ressources et atteindre vos objectifs plus rapidement.</p>
-      </div>
-
-      <div class="competence-card">
-        <img src="https://cdn-icons-png.flaticon.com/512/4149/4149728.png" alt="Rendre l’information claire" />
-        <h4>Rendre l’information claire</h4>
-        <p>Avec des tableaux de bord interactifs et des visualisations percutantes, je transforme des données complexes en insights compréhensibles et actionnables à tous les niveaux de votre organisation.</p>
-      </div>
-
-      <div class="competence-card">
-        <img src="https://cdn-icons-png.flaticon.com/512/3013/3013456.png" alt="Anticiper l’avenir" />
-        <h4>Anticiper l’avenir</h4>
-        <p>Grâce aux algorithmes de machine learning et à une maîtrise des modèles statistiques, j’identifie les tendances et prévois des scénarios futurs pour aider votre entreprise à garder une longueur d’avance.</p>
-      </div>
-
     </div>
   </section>
 
-  <!-- FOOTER -->
   <footer>
-    <p>© 2025 <strong>Brahim Laraki</strong> — Data Analyst</p>
+    <p>© 2025 <strong>Brahim Laraki</strong> – Data Analyst</p>
     <div class="footer-links">
-      <a href="mailto:larakibrahim@gmail.com" target="_blank">📧 Email</a>
+      <a href="mailto:larakibrahim@gmail.com">📧 Email</a>
       <a href="https://www.linkedin.com/in/brahim-laraki-80a1ba241/" target="_blank">💼 LinkedIn</a>
     </div>
   </footer>
