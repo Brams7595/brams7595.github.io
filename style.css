@@ -1,4 +1,4 @@
-/* ===== BASE ===== */
+/* ==== BASE ==== */
 * {
   margin: 0;
   padding: 0;
@@ -12,7 +12,7 @@ body {
   line-height: 1.6;
 }
 
-/* ===== HEADER ===== */
+/* ==== HEADER ==== */
 header {
   display: flex;
   justify-content: space-between;
@@ -21,6 +21,8 @@ header {
   background: #ffffff;
   border-bottom: 2px solid #e3f0e3;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+  position: relative;
+  z-index: 10;
 }
 
 .logo {
@@ -44,6 +46,7 @@ header {
   list-style: none;
   display: flex;
   gap: 2rem;
+  align-items: center;
 }
 
 .nav-links a {
@@ -56,14 +59,57 @@ header {
   color: #176b34;
 }
 
-/* ===== HERO ===== */
+/* ==== MENU DÉROULANT ==== */
+.dropdown {
+  position: relative;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 0.5rem 0;
+  border: 1px solid #e3f0e3;
+  top: 2rem;
+  left: 0;
+  min-width: 230px;
+}
+
+.dropdown-content li {
+  list-style: none;
+}
+
+.dropdown-content a {
+  display: block;
+  padding: 0.6rem 1rem;
+  text-decoration: none;
+  color: #0f2e18;
+  font-weight: 500;
+}
+
+.dropdown-content a:hover {
+  background-color: #e6f8e6;
+  color: #145a23;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* ==== BLOC RELIÉ ==== */
+.portfolio-wrapper {
+  background: linear-gradient(to bottom, #a8f0a3 0%, #6fd46f 100%);
+  padding-bottom: 4rem;
+}
+
+/* ==== HERO ==== */
 .hero {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: linear-gradient(180deg, #a8f0a3, #5ec65e);
   max-width: 1200px;
-  margin: 2rem auto;
+  margin: 2rem auto 0;
   padding: 4rem 5rem;
   color: #0a3a1c;
 }
@@ -111,9 +157,8 @@ header {
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
 }
 
-/* ===== COMPÉTENCES ===== */
+/* ==== COMPÉTENCES ==== */
 .competences {
-  background: #6fd46f;
   padding: 4rem 2rem;
   max-width: 1200px;
   margin: 2rem auto;
@@ -162,13 +207,12 @@ header {
   color: #1b3d1f;
 }
 
-/* ===== FOOTER ===== */
+/* ==== FOOTER ==== */
 footer {
   text-align: center;
   background: #e5f9e5;
   padding: 1.5rem;
   border-top: 2px solid #b4f1b4;
-  margin-top: 3rem;
 }
 
 footer p {
