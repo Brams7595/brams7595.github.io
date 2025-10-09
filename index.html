@@ -13,7 +13,7 @@
     <nav class="navbar">
       <div class="logo">Brahim Laraki</div>
       <ul class="nav-links">
-        <li><a href="index.html">Accueil</a></li>
+        <li><a href="#hero">Accueil</a></li>
 
         <li class="dropdown">
           <a href="#">Mon CV ▾</a>
@@ -40,7 +40,7 @@
   </header>
 
   <!-- ====== HERO ====== -->
-  <section class="hero">
+  <section id="hero" class="hero">
     <div class="hero-text">
       <h1>Bienvenue sur mon Portfolio</h1>
       <h2>Data Analyst | Python • SQL • Power BI • KNIME</h2>
@@ -63,7 +63,7 @@
       <div class="project-card">
         <img src="https://i.imgur.com/91jDlml.jpg" alt="Faux billets">
         <h3>🧾 Détection de faux billets</h3>
-        <p>Modèle prédictif pour identifier automatiquement les faux billets à partir de dimensions géométriques.</p>
+        <p>Modèle prédictif en Python pour identifier automatiquement les faux billets à partir de dimensions géométriques.</p>
         <a href="#">En savoir plus →</a>
       </div>
 
@@ -100,8 +100,7 @@
     <a href="#" class="btn btn-center">Voir tous mes projets</a>
   </section>
 
-
-     <!-- ====== MON PARCOURS ====== -->
+  <!-- ====== MON PARCOURS ====== -->
   <section id="parcours" class="timeline-section">
     <h2>Mon parcours professionnel</h2>
     <p class="intro">De la biologie médicale à l’analyse de données, un parcours guidé par la rigueur scientifique et la curiosité numérique.</p>
@@ -112,12 +111,11 @@
         <div class="timeline-date">Janv. 2024 – Janv. 2025</div>
         <div class="timeline-content">
           <h3>🎯 Alternance Data Analyst – Entreprise Réunir (Paris)</h3>
-          <p>Collecte, structuration et analyse des données issues des salons professionnels (<strong>Réunir, Meedex, Activ’Assistante</strong>).</p>
+          <p>Collecte, structuration et analyse des données issues des salons professionnels (Réunir, Meedex, Activ’Assistante).</p>
           <ul>
-            <li>Création d’un <strong>entrepôt de données (Data Warehouse)</strong> pour centraliser les données visiteurs, exposants et leads marketing.</li>
-            <li>Automatisation du reporting avec <strong>Power BI</strong> et <strong>Python</strong>.</li>
-            <li>Optimisation du site <strong>reunir.com</strong> et suivi des demandes de devis.</li>
-            <li>Participation à la stratégie data et digitalisation des processus CRM.</li>
+            <li>Création d’un entrepôt de données pour centraliser visiteurs, exposants et leads.</li>
+            <li>Automatisation du reporting avec Power BI et Python.</li>
+            <li>Optimisation du site reunir.com et suivi des demandes de devis.</li>
           </ul>
         </div>
       </div>
@@ -126,12 +124,12 @@
         <div class="timeline-date">2024</div>
         <div class="timeline-content">
           <h3>📊 Projets Data Analyst – OpenClassrooms</h3>
-          <p>Réalisation de projets pratiques dans le cadre de la certification <strong>Data Analyst (RNCP niveau 6)</strong>.</p>
+          <p>Réalisation de projets pratiques dans le cadre du parcours certifiant Data Analyst.</p>
           <ul>
-            <li>🧾 <strong>Détection de faux billets</strong> – Modèle prédictif en Python (régression logistique et K-Means).</li>
-            <li>💧 <strong>Étude sur l’accès à l’eau potable</strong> – Analyse Power BI et critères d’intervention humanitaire.</li>
-            <li>⚖️ <strong>Analyse égalité femmes-hommes</strong> – Traitement de données RH avec KNIME et visualisation Power BI.</li>
-            <li>🐔 <strong>La Poule qui Chante</strong> – Étude de marché agroalimentaire internationale.</li>
+            <li>🧾 Faux billets (Python – Machine Learning)</li>
+            <li>💧 Eau potable (Power BI – Dashboard)</li>
+            <li>⚖️ Égalité femmes-hommes (KNIME – RH)</li>
+            <li>🐔 La Poule qui Chante (Analyse de marché)</li>
           </ul>
         </div>
       </div>
@@ -139,8 +137,8 @@
       <div class="timeline-item">
         <div class="timeline-date">2021 – 2023</div>
         <div class="timeline-content">
-          <h3>🧪 Technicien de Laboratoire – Bioclinic (Villeneuve-la-Garenne)</h3>
-          <p>Gestion de la chaîne analytique (Roche C8000, Sysmex XN, Stago Star Max). Maintenance et contrôle qualité des analyses biomédicales.</p>
+          <h3>🧪 Technicien de laboratoire – Bioclinic (Villeneuve-la-Garenne)</h3>
+          <p>Gestion de la chaîne analytique, maintenance et contrôle qualité des analyses biomédicales.</p>
         </div>
       </div>
 
@@ -148,8 +146,48 @@
         <div class="timeline-date">Avant 2021</div>
         <div class="timeline-content">
           <h3>🔬 Expérience en biologie médicale – BIO 7 & Institut Pasteur</h3>
-          <p>Participation à des études de biotechnologie et à la mise en place de protocoles d’analyse. Développement de la rigueur, de la précision et de la communication scientifique.</p>
+          <p>Développement de la rigueur scientifique et des protocoles d’analyse.</p>
         </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ====== COMPÉTENCES TECHNIQUES ====== -->
+  <section id="skills" class="skills-section">
+    <h2>Mes compétences techniques</h2>
+    <p class="intro">Outils et langages que j’utilise pour analyser, modéliser et visualiser les données.</p>
+
+    <div class="skills-grid">
+
+      <div class="skill-card">
+        <h3>🐍 Python</h3>
+        <div class="bar"><div class="fill" style="width:90%"></div></div>
+        <p>Pandas, NumPy, Matplotlib, Seaborn, Scikit-learn</p>
+      </div>
+
+      <div class="skill-card">
+        <h3>📊 Power BI</h3>
+        <div class="bar"><div class="fill" style="width:85%"></div></div>
+        <p>Modélisation, DAX, rapports interactifs, KPI visuels</p>
+      </div>
+
+      <div class="skill-card">
+        <h3>🧩 KNIME</h3>
+        <div class="bar"><div class="fill" style="width:75%"></div></div>
+        <p>Automatisation, flux de données, ETL visuel</p>
+      </div>
+
+      <div class="skill-card">
+        <h3>🗄️ SQL</h3>
+        <div class="bar"><div class="fill" style="width:80%"></div></div>
+        <p>Requêtes complexes, jointures, agrégations</p>
+      </div>
+
+      <div class="skill-card">
+        <h3>📈 Excel / Power Query</h3>
+        <div class="bar"><div class="fill" style="width:88%"></div></div>
+        <p>Analyse avancée, nettoyage, automatisation de rapports</p>
       </div>
 
     </div>
@@ -159,7 +197,7 @@
   <footer id="contact">
     <p>📧 <a href="mailto:larakibrahim@gmail.com">larakibrahim@gmail.com</a></p>
     <p>🔗 <a href="https://www.linkedin.com/in/brahim-laraki-80a1ba241/" target="_blank">LinkedIn : Brahim Laraki</a></p>
-    <p class="copyright">© 2025 Brahim Laraki - Tous droits réservés.</p>
+    <p class="copyright">© 2025 Brahim Laraki – Tous droits réservés.</p>
   </footer>
 
 </body>
