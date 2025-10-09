@@ -4,78 +4,187 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portfolio Data Analyst - Brahim Laraki</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
   <style>
-    body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #f9f9f9; color: #333; }
-    header { background: #1f77b4; color: white; text-align: center; padding: 2rem 1rem; }
-    header h1 { margin: 0; font-size: 2.5rem; }
-    header p { margin: 0.5rem 0 0; }
-    section { padding: 2rem; max-width: 1000px; margin: auto; }
-    h2 { color: #1f77b4; margin-bottom: 1rem; }
-    .projects { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; }
-    .card { background: white; border-radius: 8px; padding: 1rem; box-shadow: 0 2px 5px rgba(0,0,0,0.1); transition: transform 0.2s; }
-    .card:hover { transform: translateY(-5px); }
-    .card h3 { margin-top: 0; }
-    footer { text-align: center; padding: 1rem; margin-top: 2rem; background: #eee; }
-    a { color: #1f77b4; font-weight: bold; text-decoration: none; }
-    a:hover { text-decoration: underline; }
+    body {
+      font-family: "Segoe UI", sans-serif;
+      background-color: #f8f9fa;
+    }
+    header {
+      background: linear-gradient(135deg, #1f77b4, #0d6efd);
+      color: white;
+      text-align: center;
+      padding: 4rem 1rem;
+    }
+    header h1 {
+      font-size: 3rem;
+      font-weight: 700;
+    }
+    header p {
+      font-size: 1.2rem;
+      opacity: 0.9;
+    }
+    .section-title {
+      color: #1f77b4;
+      font-weight: 700;
+      margin-top: 3rem;
+      margin-bottom: 1rem;
+      text-transform: uppercase;
+    }
+    .badge-skill {
+      background-color: #e3f2fd;
+      color: #0d6efd;
+      font-size: 1rem;
+      margin: 0.3rem;
+      border-radius: 8px;
+      padding: 0.6rem 1rem;
+      font-weight: 500;
+    }
+    .project-card {
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .project-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+    }
+    footer {
+      background-color: #0d6efd;
+      color: white;
+      text-align: center;
+      padding: 1.5rem;
+      margin-top: 3rem;
+    }
+    footer a {
+      color: #fff;
+      text-decoration: underline;
+    }
   </style>
 </head>
+
 <body>
+
+  <!-- HEADER -->
   <header>
     <h1>Brahim Laraki</h1>
     <p>Data Analyst | Python • SQL • Power BI • KNIME</p>
   </header>
 
-  <section>
-    <h2>👨‍💻 À propos</h2>
-    <p>
-      Je suis un Data Analyst passionné par l’analyse, la visualisation et l’exploitation des données
-      pour en tirer des insights stratégiques. Mon portfolio présente mes projets réalisés en Python,
-      SQL, Power BI et KNIME.
+  <!-- À PROPOS -->
+  <section class="container text-center my-5">
+    <h2 class="section-title">À propos</h2>
+    <p class="lead">
+      Je suis un Data Analyst passionné par la compréhension et la valorisation des données.
+      J’aide les entreprises à transformer leurs données en leviers de performance à travers
+      des analyses, visualisations et modèles prédictifs réalisés avec Python, SQL, Power BI et KNIME.
     </p>
   </section>
 
-  <section>
-    <h2>📂 Mes Projets</h2>
-    <div class="projects">
-      <div class="card">
-        <h3>💶 Détection de faux billets</h3>
-        <p>Modèle prédictif pour identifier automatiquement les faux billets en euros à partir de dimensions géométriques.</p>
-        <a href="https://github.com/Brams7595/detection-faux-billets-python" target="_blank">Voir le projet</a>
-      </div>
-      <div class="card">
-        <h3>💧 Étude sur l’eau potable</h3>
-        <p>Analyse des pays confrontés à des difficultés d’accès à l’eau potable et tableau de bord Power BI.</p>
-        <a href="https://github.com/Brams7595/etude-eau-potable" target="_blank">Voir le projet</a>
-      </div>
-      <div class="card">
-        <h3>🏡 Base de données immobilières</h3>
-        <p>Création et normalisation (3NF) d’une base de données SQL pour analyser les transactions immobilières.</p>
-        <a href="https://github.com/Brams7595/Projet-Laplace-Immo-Base-de-donnees" target="_blank">Voir le projet</a>
-      </div>
-      <div class="card">
-        <h3>🐔 La Poule qui Chante</h3>
-        <p>Étude de marché internationale pour identifier les pays favorables à l’exportation de volailles françaises.</p>
-        <a href="https://github.com/Brams7595/etude-export-volaille" target="_blank">Voir le projet</a>
-      </div>
-      <div class="card">
-        <h3>⚖️ Égalité femmes-hommes</h3>
-        <p>Diagnostic automatisé avec KNIME sur les indicateurs RH liés à l’égalité professionnelle femmes-hommes.</p>
-        <a href="https://github.com/Brams7595/analyse-egalite-femme-homme-knime" target="_blank">Voir le projet</a>
+  <!-- COMPÉTENCES -->
+  <section class="container text-center">
+    <h2 class="section-title">Compétences techniques</h2>
+    <div>
+      <span class="badge-skill">Python (Pandas, NumPy, Matplotlib, Scikit-learn)</span>
+      <span class="badge-skill">SQL (PostgreSQL, MySQL)</span>
+      <span class="badge-skill">Power BI (DAX, Power Query)</span>
+      <span class="badge-skill">KNIME</span>
+      <span class="badge-skill">Excel avancé</span>
+      <span class="badge-skill">Git & GitHub</span>
+      <span class="badge-skill">Data Cleaning & ETL</span>
+      <span class="badge-skill">Data Visualization</span>
+    </div>
+  </section>
+
+  <!-- EXPÉRIENCES -->
+  <section class="container">
+    <h2 class="section-title text-center">Expérience professionnelle</h2>
+
+    <div class="card my-3 shadow-sm">
+      <div class="card-body">
+        <h5 class="card-title">Alternant Data Analyst — OpenClassrooms</h5>
+        <h6 class="card-subtitle mb-2 text-muted">2024 - 2025</h6>
+        <p class="card-text">
+          Réalisation de projets complets de data analysis : nettoyage, exploration, modélisation
+          et visualisation de données à des fins stratégiques. 
+          Utilisation de Python, Power BI, SQL et KNIME sur des cas réels : égalité professionnelle,
+          étude de marché, détection de faux billets, gestion de base immobilière, et plus encore.
+        </p>
       </div>
     </div>
   </section>
 
-  <section>
-    <h2>📫 Contact</h2>
-    <p>
-      💼 <a href="https://www.linkedin.com/in/tonprofil" target="_blank">Mon LinkedIn</a><br>
-      📧 <a href="mailto:tonemail@example.com">tonemail@example.com</a>
-    </p>
+  <!-- PROJETS -->
+  <section class="container my-5">
+    <h2 class="section-title text-center">Projets réalisés</h2>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="card project-card h-100">
+          <div class="card-body">
+            <h5 class="card-title">💶 Détection de faux billets</h5>
+            <p class="card-text">Modèle prédictif pour identifier automatiquement les faux billets à partir de leurs caractéristiques géométriques.</p>
+            <a href="https://github.com/Brams7595/detection-faux-billets-python" target="_blank" class="btn btn-outline-primary btn-sm">Voir le projet</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card project-card h-100">
+          <div class="card-body">
+            <h5 class="card-title">💧 Étude sur l’eau potable</h5>
+            <p class="card-text">Analyse Power BI des pays confrontés à des difficultés d’accès à l’eau potable et recommandations stratégiques.</p>
+            <a href="https://github.com/Brams7595/etude-eau-potable" target="_blank" class="btn btn-outline-primary btn-sm">Voir le projet</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card project-card h-100">
+          <div class="card-body">
+            <h5 class="card-title">🏡 Base de données immobilières</h5>
+            <p class="card-text">Création et normalisation d’une base SQL pour analyser les transactions immobilières.</p>
+            <a href="https://github.com/Brams7595/Projet-Laplace-Immo-Base-de-donnees" target="_blank" class="btn btn-outline-primary btn-sm">Voir le projet</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card project-card h-100">
+          <div class="card-body">
+            <h5 class="card-title">🐔 La Poule qui Chante</h5>
+            <p class="card-text">Étude de marché internationale pour identifier les pays favorables à l’exportation de volailles françaises.</p>
+            <a href="https://github.com/Brams7595/etude-export-volaille" target="_blank" class="btn btn-outline-primary btn-sm">Voir le projet</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card project-card h-100">
+          <div class="card-body">
+            <h5 class="card-title">⚖️ Égalité femmes-hommes</h5>
+            <p class="card-text">Diagnostic automatisé des indicateurs RH liés à l’égalité professionnelle grâce à KNIME.</p>
+            <a href="https://github.com/Brams7595/analyse-egalite-femme-homme-knime" target="_blank" class="btn btn-outline-primary btn-sm">Voir le projet</a>
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
 
+  <!-- CONTACT -->
+  <section class="container text-center my-5">
+    <h2 class="section-title">Contact</h2>
+    <p>📧 <a href="mailto:brahim.laraki@example.com">brahim.laraki@example.com</a></p>
+    <p>💼 <a href="https://www.linkedin.com/in/tonprofil" target="_blank">Mon profil LinkedIn</a></p>
+  </section>
+
+  <!-- FOOTER -->
   <footer>
-    <p>© 2025 Brahim Laraki | Portfolio Data Analyst</p>
+    <p>© 2025 Brahim Laraki — Portfolio Data Analyst</p>
   </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
 </html>
