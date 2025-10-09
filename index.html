@@ -1,23 +1,28 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio Data Analyst - Brahim Laraki</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta name="description" content="Portfolio de Brahim Laraki - Data Analyst | Python, SQL, Power BI, KNIME" />
+  <title>Brahim Laraki | Data Analyst Portfolio</title>
 
-  <!-- Bootstrap CSS -->
+  <!-- Bootstrap & Font Awesome -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a2d9a64c4f.js" crossorigin="anonymous"></script>
 
   <style>
     body {
-      font-family: "Segoe UI", sans-serif;
+      font-family: 'Segoe UI', Arial, sans-serif;
       background-color: #f8f9fa;
+      color: #333;
     }
+
+    /* Header */
     header {
-      background: linear-gradient(135deg, #1f77b4, #0d6efd);
+      background: linear-gradient(135deg, #0d6efd, #1f77b4);
       color: white;
       text-align: center;
-      padding: 4rem 1rem;
+      padding: 80px 20px;
     }
     header h1 {
       font-size: 3rem;
@@ -27,13 +32,29 @@
       font-size: 1.2rem;
       opacity: 0.9;
     }
+
+    /* Section title */
     .section-title {
+      text-transform: uppercase;
       color: #1f77b4;
       font-weight: 700;
-      margin-top: 3rem;
+      border-bottom: 3px solid #1f77b4;
+      display: inline-block;
       margin-bottom: 1rem;
-      text-transform: uppercase;
     }
+
+    /* Project cards */
+    .project-card {
+      border: none;
+      border-radius: 12px;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .project-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+    }
+
+    /* Skills badges */
     .badge-skill {
       background-color: #e3f2fd;
       color: #0d6efd;
@@ -43,20 +64,16 @@
       padding: 0.6rem 1rem;
       font-weight: 500;
     }
-    .project-card {
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-    }
-    .project-card:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 6px 15px rgba(0,0,0,0.1);
-    }
+
+    /* Footer */
     footer {
       background-color: #0d6efd;
       color: white;
       text-align: center;
       padding: 1.5rem;
-      margin-top: 3rem;
+      margin-top: 4rem;
     }
+
     footer a {
       color: #fff;
       text-decoration: underline;
@@ -65,66 +82,64 @@
 </head>
 
 <body>
-
   <!-- HEADER -->
   <header>
     <h1>Brahim Laraki</h1>
     <p>Data Analyst | Python • SQL • Power BI • KNIME</p>
   </header>
 
-  <!-- À PROPOS -->
+  <!-- ABOUT -->
   <section class="container text-center my-5">
     <h2 class="section-title">À propos</h2>
     <p class="lead">
-      Je suis un Data Analyst passionné par la compréhension et la valorisation des données.
-      J’aide les entreprises à transformer leurs données en leviers de performance à travers
-      des analyses, visualisations et modèles prédictifs réalisés avec Python, SQL, Power BI et KNIME.
+      Passionné par la data et la visualisation, j’analyse et valorise les données
+      pour transformer les insights en leviers de performance.  
+      Mon objectif : mettre la donnée au service des décisions stratégiques.
     </p>
   </section>
 
-  <!-- COMPÉTENCES -->
-  <section class="container text-center">
+  <!-- COMPETENCES -->
+  <section class="container text-center my-5">
     <h2 class="section-title">Compétences techniques</h2>
     <div>
-      <span class="badge-skill">Python (Pandas, NumPy, Matplotlib, Scikit-learn)</span>
-      <span class="badge-skill">SQL (PostgreSQL, MySQL)</span>
+      <span class="badge-skill">Python (Pandas, Matplotlib, Scikit-learn)</span>
+      <span class="badge-skill">SQL (MySQL, PostgreSQL)</span>
       <span class="badge-skill">Power BI (DAX, Power Query)</span>
       <span class="badge-skill">KNIME</span>
-      <span class="badge-skill">Excel avancé</span>
-      <span class="badge-skill">Git & GitHub</span>
-      <span class="badge-skill">Data Cleaning & ETL</span>
+      <span class="badge-skill">Data Cleaning</span>
       <span class="badge-skill">Data Visualization</span>
+      <span class="badge-skill">Machine Learning</span>
+      <span class="badge-skill">Git / GitHub</span>
     </div>
   </section>
 
-  <!-- EXPÉRIENCES -->
-  <section class="container">
-    <h2 class="section-title text-center">Expérience professionnelle</h2>
+  <!-- EXPERIENCE -->
+  <section class="container my-5">
+    <h2 class="section-title">Expérience</h2>
 
     <div class="card my-3 shadow-sm">
       <div class="card-body">
-        <h5 class="card-title">Alternant Data Analyst — OpenClassrooms</h5>
-        <h6 class="card-subtitle mb-2 text-muted">2024 - 2025</h6>
+        <h5 class="card-title">🎓 Alternant Data Analyst – OpenClassrooms</h5>
+        <h6 class="card-subtitle mb-2 text-muted">2024 – 2025</h6>
         <p class="card-text">
-          Réalisation de projets complets de data analysis : nettoyage, exploration, modélisation
-          et visualisation de données à des fins stratégiques. 
-          Utilisation de Python, Power BI, SQL et KNIME sur des cas réels : égalité professionnelle,
-          étude de marché, détection de faux billets, gestion de base immobilière, et plus encore.
+          Réalisation de plusieurs projets concrets : création de tableaux de bord Power BI, automatisation avec KNIME,
+          analyses statistiques et modèles prédictifs sous Python (Pandas, Scikit-learn).
         </p>
       </div>
     </div>
   </section>
 
-  <!-- PROJETS -->
+  <!-- PROJECTS -->
   <section class="container my-5">
-    <h2 class="section-title text-center">Projets réalisés</h2>
+    <h2 class="section-title">Projets</h2>
+
     <div class="row g-4">
       <div class="col-md-4">
         <div class="card project-card h-100">
           <div class="card-body">
             <h5 class="card-title">💶 Détection de faux billets</h5>
-            <p class="card-text">Modèle prédictif pour identifier automatiquement les faux billets à partir de leurs caractéristiques géométriques.</p>
-            <a href="https://github.com/Brams7595/detection-faux-billets-python" target="_blank" class="btn btn-outline-primary btn-sm">Voir le projet</a>
+            <p class="card-text">Modèle prédictif en Python pour identifier automatiquement les faux billets en euros.</p>
+            <a href="https://github.com/Brams7595/detection-faux-billets-python" target="_blank" class="btn btn-outline-primary btn-sm">Voir sur GitHub</a>
           </div>
         </div>
       </div>
@@ -133,8 +148,8 @@
         <div class="card project-card h-100">
           <div class="card-body">
             <h5 class="card-title">💧 Étude sur l’eau potable</h5>
-            <p class="card-text">Analyse Power BI des pays confrontés à des difficultés d’accès à l’eau potable et recommandations stratégiques.</p>
-            <a href="https://github.com/Brams7595/etude-eau-potable" target="_blank" class="btn btn-outline-primary btn-sm">Voir le projet</a>
+            <p class="card-text">Analyse Power BI sur les pays confrontés à des difficultés d’accès à l’eau potable (DWFA).</p>
+            <a href="https://github.com/Brams7595/etude-eau-potable" target="_blank" class="btn btn-outline-primary btn-sm">Voir sur GitHub</a>
           </div>
         </div>
       </div>
@@ -143,8 +158,8 @@
         <div class="card project-card h-100">
           <div class="card-body">
             <h5 class="card-title">🏡 Base de données immobilières</h5>
-            <p class="card-text">Création et normalisation d’une base SQL pour analyser les transactions immobilières.</p>
-            <a href="https://github.com/Brams7595/Projet-Laplace-Immo-Base-de-donnees" target="_blank" class="btn btn-outline-primary btn-sm">Voir le projet</a>
+            <p class="card-text">Création et normalisation SQL (3NF) d’une base de données sur les transactions immobilières.</p>
+            <a href="https://github.com/Brams7595/Projet-Laplace-Immo-Base-de-donnees" target="_blank" class="btn btn-outline-primary btn-sm">Voir sur GitHub</a>
           </div>
         </div>
       </div>
@@ -153,8 +168,8 @@
         <div class="card project-card h-100">
           <div class="card-body">
             <h5 class="card-title">🐔 La Poule qui Chante</h5>
-            <p class="card-text">Étude de marché internationale pour identifier les pays favorables à l’exportation de volailles françaises.</p>
-            <a href="https://github.com/Brams7595/etude-export-volaille" target="_blank" class="btn btn-outline-primary btn-sm">Voir le projet</a>
+            <p class="card-text">Étude de marché internationale avec Python et clustering pour exporter des volailles françaises.</p>
+            <a href="https://github.com/Brams7595/etude-export-volaille" target="_blank" class="btn btn-outline-primary btn-sm">Voir sur GitHub</a>
           </div>
         </div>
       </div>
@@ -163,8 +178,8 @@
         <div class="card project-card h-100">
           <div class="card-body">
             <h5 class="card-title">⚖️ Égalité femmes-hommes</h5>
-            <p class="card-text">Diagnostic automatisé des indicateurs RH liés à l’égalité professionnelle grâce à KNIME.</p>
-            <a href="https://github.com/Brams7595/analyse-egalite-femme-homme-knime" target="_blank" class="btn btn-outline-primary btn-sm">Voir le projet</a>
+            <p class="card-text">Diagnostic automatisé dans KNIME sur les indicateurs RH liés à l’égalité professionnelle.</p>
+            <a href="https://github.com/Brams7595/analyse-egalite-femme-homme-knime" target="_blank" class="btn btn-outline-primary btn-sm">Voir sur GitHub</a>
           </div>
         </div>
       </div>
@@ -175,7 +190,7 @@
   <section class="container text-center my-5">
     <h2 class="section-title">Contact</h2>
     <p>📧 <a href="mailto:brahim.laraki@example.com">brahim.laraki@example.com</a></p>
-    <p>💼 <a href="https://www.linkedin.com/in/tonprofil" target="_blank">Mon profil LinkedIn</a></p>
+    <p>💼 <a href="https://www.linkedin.com/in/tonprofil" target="_blank">LinkedIn : Brahim Laraki</a></p>
   </section>
 
   <!-- FOOTER -->
@@ -183,8 +198,6 @@
     <p>© 2025 Brahim Laraki — Portfolio Data Analyst</p>
   </footer>
 
-  <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-
 </body>
 </html>
